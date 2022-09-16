@@ -16,7 +16,7 @@ export const color = {
   textLight: '#8993a4',
   textLink: '#0052cc',
 
-  backgroundDarkPrimary: '#0747A6',
+  backgroundDarkPrimary: '#23ade3',
   backgroundMedium: '#dfe1e6',
   backgroundLight: '#ebecf0',
   backgroundLightest: '#F4F5F7',
@@ -57,7 +57,7 @@ export const issueStatusBackgroundColors = {
 };
 
 export const sizes = {
-  appNavBarLeftWidth: 64,
+  appNavBarLeftWidth: 200,
   secondarySideBarWidth: 230,
   minViewportWidth: 1000,
 };

@@ -13,12 +13,8 @@ export const NavLeft = styled.aside`
   height: 100vh;
   width: ${sizes.appNavBarLeftWidth}px;
   background: ${color.backgroundDarkPrimary};
-  transition: all 0.1s;
+  width: 200px;
   ${mixin.hardwareAccelerate}
-  &:hover {
-    width: 200px;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.6);
-  }
 `;
 
 export const LogoLink = styled(NavLink)`

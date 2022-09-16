@@ -11,7 +11,6 @@ import {
   ProjectTexts,
   ProjectName,
   ProjectCategory,
-  Divider,
   LinkItem,
   LinkText,
   NotImplemented,
@@ -36,12 +35,6 @@ const ProjectSidebar = ({ project }) => {
 
       {renderLinkItem(match, 'Kanban Board', 'board', '/board')}
       {renderLinkItem(match, 'Project settings', 'settings', '/settings')}
-      <Divider />
-      {renderLinkItem(match, 'Releases', 'shipping')}
-      {renderLinkItem(match, 'Issues and filters', 'issues')}
-      {renderLinkItem(match, 'Pages', 'page')}
-      {renderLinkItem(match, 'Reports', 'reports')}
-      {renderLinkItem(match, 'Components', 'component')}
     </Sidebar>
   );
 };

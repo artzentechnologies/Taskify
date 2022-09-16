@@ -7,7 +7,6 @@ import { createQueryParamModalHelpers } from 'shared/utils/queryParamModal';
 import { PageLoader, PageError, Modal } from 'shared/components';
 
 import NavbarLeft from './NavbarLeft';
-import Sidebar from './Sidebar';
 import Board from './Board';
 import IssueSearch from './IssueSearch';
 import IssueCreate from './IssueCreate';
@@ -44,8 +43,6 @@ const Project = () => {
         issueCreateModalOpen={issueCreateModalHelpers.open}
       />
 
-      <Sidebar project={project} />
-
       {issueSearchModalHelpers.isOpen() && (
         <Modal
           isOpen
@@ -68,7 +65,7 @@ const Project = () => {
             <IssueCreate
               project={project}
               fetchProject={fetchProject}
-              onCreate={() => history.push(`${match.url}/board`)}
+              onCreate={() => history.push(`${match.url}/test-project`)}
               modalClose={modal.close}
             />
           )}
@@ -76,7 +73,7 @@ const Project = () => {
       )}
 
       <Route
-        path={`${match.path}/board`}
+        path={`${match.path}/test-project`}
         render={() => (
           <Board
             project={project}
@@ -91,7 +88,7 @@ const Project = () => {
         render={() => <ProjectSettings project={project} fetchProject={fetchProject} />}
       />
 
-      {match.isExact && <Redirect to={`${match.url}/board`} />}
+      {match.isExact && <Redirect to={`${match.url}/test-project`} />}
     </ProjectPage>
   );
 };

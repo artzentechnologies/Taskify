@@ -32,7 +32,11 @@ const AboutTooltip = tooltipProps => (
           <Button variant="primary">Visit Website</Button>
         </a>
 
-        <a href="https://github.com/oldboyxx/jira_clone" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://github.com/artzentechnologies/jira_clone"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Button style={{ marginLeft: 10 }} icon="github">
             Github Repo
           </Button>
