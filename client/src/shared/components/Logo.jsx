@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.jpg';
 
 const propTypes = {
   className: PropTypes.string,
@@ -12,7 +12,7 @@ const defaultProps = {
 
 const Logo = ({ className }) => (
   <span className={className}>
-    <img src={logo} alt="logo" />
+    <img style={{ width: '150px' }} src={logo} alt="logo" />
   </span>
 );
 

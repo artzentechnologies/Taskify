@@ -8,9 +8,10 @@ import { NavLeft, LogoLink, StyledLogo, Bottom, Item, ItemText } from './Styles'
 const propTypes = {
   issueSearchModalOpen: PropTypes.func.isRequired,
   issueCreateModalOpen: PropTypes.func.isRequired,
+  projectName: PropTypes.string.isRequired,
 };
 
-const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen }) => (
+const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen, projectName }) => (
   <NavLeft>
     <LogoLink to="/">
       <StyledLogo color="#fff" />
@@ -19,13 +20,13 @@ const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen }) => (
     <Item>
       <Icon type="board" size={27} />
       <ItemText>
-        <Link to="/project/test-project">View Board</Link>
+        <Link to={`/project/${projectName}`}>View Board</Link>
       </ItemText>
     </Item>
     <Item>
       <Icon type="settings" size={27} />
       <ItemText>
-        <Link to="/project/settings">Settings</Link>
+        <Link to={`/project/settings/${projectName}`}>Settings</Link>
       </ItemText>
     </Item>
 

@@ -31,7 +31,7 @@ const ProjectSettings = ({ project, fetchProject }) => {
       }}
       onSubmit={async (values, form) => {
         try {
-          await updateProject(values);
+          await updateProject({ ...values, projectId: project.id });
           await fetchProject();
           toast.success('Changes have been saved successfully.');
         } catch (error) {

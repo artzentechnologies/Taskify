@@ -60,11 +60,11 @@ export const Item = styled.div`
 export const ItemText = styled.div`
   position: relative;
   right: 12px;
-  visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   text-transform: uppercase;
   transition: all 0.1s;
   transition-property: right, visibility, opacity;
+  right: 0;
   ${font.bold}
   ${font.size(12)}
   ${NavLeft}:hover & {
